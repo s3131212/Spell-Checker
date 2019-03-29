@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spell Checker</title>
+    <style>
+        html, body{
+            margin: 0;
+            padding: 0;
+        }
+        #textarea{
+            width: 100vw;
+            height: 60vh;
+            margin: 0;
+            padding: 30px;
+            font-size: 18px;
+        }
+        #box {
+            width: 100vw;
+            padding: 50px;
+            margin: 30px auto;
+        }
+    </style>
+</head>
+<body>
+    <textarea id="textarea" spellcheck="false" onkeyup="textChange()"></textarea>
+    <div id="box">
+        Wrong Spelling:<span id="SpellCheck"></span> <br />
+    </div>
+    <script src="trie.js"></script>
+    <script src="main.js"></script> 
+</body>
+</html>
